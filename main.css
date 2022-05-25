@@ -1,4 +1,51 @@
-button {
-    background-color: #cbf3f0;
+/* 
+body {
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    height: 350px;
+    width: 250px;
+    /* background-color: magenta; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
+button {
+    background-color:#d8e2dc;
+}
+
+.button {
+    border: 1px solid white;
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+        /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+}
+
+.operation {
+    background-color: #ffe3e0;
+}
+
+#display {
+    width: 75%;
+    background-color: #ecf8f8;
+}
+
+
+/* button:active {
+    color: blue;
+    font-size: 50px;
+} */
+/* 
+/* button:hover {
+    background-color: black;
+    font-size: 50px;
+    color: white;
+} */
