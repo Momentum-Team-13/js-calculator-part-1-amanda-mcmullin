@@ -1,10 +1,9 @@
-/* 
-body {
+/* body {
     margin: 0;
     padding: 0;
 } */
 
-.container {
+.calculator {
     height: 350px;
     width: 250px;
     /* background-color: magenta; */
@@ -24,9 +23,6 @@ button {
     justify-content: space-evenly;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-        /* box-sizing: border-box;
-    margin: 0;
-    padding: 0; */
 }
 
 .operation {
@@ -35,5 +31,8 @@ button {
 
 #display {
     width: 75%;
-    background-color: #ecf8f8;
+    background-color: #e0fbfc;
+    text-align: right;
+    margin: 0;
+    padding: 0;
 }
