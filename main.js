@@ -36,3 +36,6 @@ clear.addEventListener("click", function (event) {
 // MATH!!!
 
 // equals button functionality
+
+// other features?
+
