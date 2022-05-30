@@ -6,29 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
-    <title>Calculator</title>
+    <title>Calculator Take Three</title>
 </head>
 <body>
+    
     <div class="calculator">
-        <button class="button clear" id="C">C</button>
-        <button class="button display" id="display"> </button>
-        <button class="button number" id="7">7</button>
-        <button class="button number" id="8">8</button>
-        <button class="button number" id="9">9</button>
-        <button class="button operation" id="divide">/</button>
-        <button class="button number" id="4">4</button>
-        <button class="button number" id="5">5</button>
-        <button class="button number" id="6">6</button>
-        <button class="button operation" id="multiply">X</button>
-        <button class="button number" id="1">1</button>
-        <button class="button number" id="2">2</button>
-        <button class="button number" id="3">3</button>
-        <button class="button operation" id="subtract">-</button>
-        <button class="button number" id="0">0</button>
-        <button class="button decimal" id="decimal">.</button>
-        <button class="button equals" id="equals">=</button>
-        <button class="button operation" id="add">+</button>
+
+        <!-- sets display/calculator screen as disabled text input -->
+        <input type="text" class="calculator-screen" value="0" disabled />
+        
+        <div class="calculator-keys">
+            <!-- button type will have no default behavior; value refers to value of button  -->
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <!-- multiply symbol changed from displayed X to * with &times  -->
+            <button type="button" class="operator" value="*">&times;</button>
+            <!-- division symbol hanged from displayed % to / with &times  -->
+            <button type="button" class="operator" value="/">&divide;</button>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal function" value=".">.</button>
+            <button type="button" class="all-clear function" value="all-clear">C</button>
+            <button type="button" class="equal-sign operator" value="=">=</button>
+        </div>
     </div>
 </body>
 </html>
