@@ -1,3 +1,6 @@
+// basic functioning calculator - only additional function is zero appearing before a decimal if a number is not already entered
+
+
 //display, first operand, operator, and second operand check
 const calculator = {
     displayValue: '0',
