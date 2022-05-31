@@ -1,0 +1,96 @@
+/* css reset - keep padding/border same size no matter the increase in width*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #0c1b33;
+}
+
+/* calculator centered on screen; has fixed width */
+.calculator {
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 4rem;
+    height: 80px;
+    border: 1px solid black;
+    background-color: #fffffc;
+    color: black;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+button:hover {
+    background-color: #9bf6ff;
+}
+
+.operator {
+    background-color: #34df4b;
+}
+
+.decimal {
+    background-color: #8cff99;
+}
+.all-clear {
+    background-color: #ff8cc6;
+    border-color:#c4c4c4;
+    color: black;
+}
+
+.all-clear:hover {
+    background-color:#9bf6ff;
+}
+
+.equal-sign {
+    background-color: #de369d;
+    border-color: #c4c4c4;
+    color: black;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5; 
+}
+
+.equal-sign:hover {
+    background-color: #9bf6ff;
+}
+
+.brand {
+    font-size: 1.25em;
+    background-color: #fee700;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 13%;
+}
